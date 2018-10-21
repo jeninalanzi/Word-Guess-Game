@@ -1,0 +1,39 @@
+.jumbotron {
+    text-align: center;
+    background: #000000 url("../images/pumpkinjumbotron.jpg") no-repeat left;
+    background-size: contain;
+    color: #ffffff;
+}
+
+body {
+    background-color: #252526;
+}
+
+h1, h2, h3 {
+    font-family: 'Gochi Hand', cursive;
+}
+
+.main-image {
+   width: 90%;
+}
+
+.col-md-5, .col-xs-12 {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    margin: 0 7px;
+}
+
+#random-word, #win-score, #loss-score, #number-guesses, #wrong-letters-guessed {
+    font-family: 'Gochi Hand', cursive;
+    text-align: center;
+    color: darkred;
+    font-size: 30px;
+}
+
+
+
+@media(max-width: 415px) {
+    .main-image {
+        width: 50%;
+    }
+}

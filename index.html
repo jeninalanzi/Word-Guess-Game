@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+    <title>Halloween Hangman Word-Guessing Game!</title>
+</head>
+<body>
+
+    <!--FLUID JUMBOTRON-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Halloween Hangman!</h1>
+          <p class="lead"><button type="button" class="btn btn-dark" onclick="initialize_Game()">Press to Begin :)</button></p>
+        </div>
+      </div>
+      <!--/FLUID JUMBOTRON-->
+
+    <div class="container">
+          
+            <div class="row">
+
+                <div class="col-md-1">
+                    <!--empty-->
+                </div>
+
+                <!--This column is for the Hangman image.-->
+                <div class="col-md-5 col-xs-12">
+                    <img class ="img-responsive main-image" src="assets/images/hangmancrop.jpg">
+                </div>
+
+                <!--This column is going to be divided into subrows.-->
+                <div class="col-md-5 col-xs-12">
+                    <div class="container">
+                        
+                        <div class="row">
+                            <h2>Current Word:</h2>
+                        </div>
+
+                        <div class="row">
+                            <div id="random-word">
+                                <!--JS! This is where the random word will go.-->
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <h1>WINS!</h1>
+                                <div id="win-score">
+                                    <!--This is where the wins go.-->
+                                </div>
+                        </div>
+
+                        <div class="row">
+                            <h1>LOSSES!</h1>
+                                <div id="loss-score">
+                                    <!--This is where the wins go.-->
+                                </div>
+                        </div>
+
+                        <div class="row">
+                            <h3>Number # of Guesses Remaining:</h3>
+                                <div id="number-guesses">
+                                    <!--This is where the remaining guesses will display.-->
+                                </div>
+                        </div>
+
+                        <div class="row">
+                            <h3>Letters Already Guessed:</h3>
+                            <div id="wrong-letters-guessed">
+                                <!--JS! This is where the wrongly guessed letters go.-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-1">
+                    <!--empty-->
+                </div>
+
+            </div>
+
+
+    </div>
+
+
+
+
+
+
+
+<!--JAVASCRIPT LINK-->
+<script src="assets/javascript/game.js"></script>
+
+
+<!--BOOTSTRAP JAVASCRIPT LINK-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html> 
